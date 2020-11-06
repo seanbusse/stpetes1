@@ -1,0 +1,202 @@
+/* General Styling */
+
+p {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: Open Sans, sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+html {
+  background: rgba(128,123,134,0.3);
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  background-color: #949aa9;
+  box-shadow: 0 0 7px rgba(0,0,0,0.2);
+  max-width: 1440px;
+}
+
+
+/* Header Styling */
+
+#header {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop( 0.0, rgb(221, 220, 220) ), color-stop( 1.0, rgba(147, 154, 169, 0.67) ));
+}
+
+.btn-square {
+  border-radius: 0;
+}
+
+.btn-customFont {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: Open Sans, sans-serif;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.nav-item a {
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #1c3771;
+}
+
+.nav-item.active a {
+  color: #451c25;
+}
+
+.navbar-toggler-icon i {
+  font-size: 30px !important;
+  color: #1c3771;
+}
+
+.navbar-toggler-icon i:focus {
+  color: #451c25;
+}
+
+.dropdown-menu {
+  border: none;
+  top: 90px;
+  background-color: #ffffff !important;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #e5e5e5;
+  width: 95%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    border-bottom: 1px solid;
+  }
+}
+
+/* Home Styling */
+
+.homeTop {
+  background-image: url('https://stpetesok.church/images/2018/08/16/galaxy-background-tumblr.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+#homeCarousel {
+  padding: 150px 20%;
+}
+
+#homeCarousel h2 {
+  text-align: center;
+  color: #999999;
+  font-size: 36pt;
+  font-weight: 900;
+  font-family: book antiqua, serif !important;
+}
+
+#homeCarousel p {
+  text-align: justify;
+  color: #999999;
+  font-size: 24pt;
+  line-height: 26pt;
+  font-family: book antiqua, serif !important;
+}
+
+.topLinks {
+  padding: 100px 5%;
+}
+
+.homeLinkImage {
+  max-width: 100%;
+}
+
+.missionMinute {
+  height: auto;
+  background: #333333;
+  border-radius: 10px;
+  border: 5px solid #999999;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.missionMinute h3 {
+  vertical-align: middle;
+  margin: 0;
+  display: inline-block;
+  float: right;
+  background: #333333;
+  line-height: 3.5vw;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 2.5vw;
+  color: #ffffff !important;
+  font-family: book antiqua;
+  background: transparent;
+}
+
+.missMinImg {
+  display: inline-block;
+  width: 10%
+}
+
+.content-box {
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #999999;
+}
+
+.content-box h3 {
+    text-align: left;
+    background: #333333;
+    color: #ffffff !important;
+    font-size: 2.5vw;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+    font-family: book antiqua;
+}
+
+.content-box img {
+    border-radius: 5px 5px 0 0;
+}
+
+@media (min-width: 1500px) {
+  .missionMinute h3 {
+      font-size: 36px;
+      line-height: 50px;
+  }
+  .content-box h3 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+}
+
+@media(max-width: 992px) {
+  .missionMinute h3 {
+      font-size: 2.5vw;
+      line-height: 4.5vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .missionMinute h3 {
+      font-size: 5vw;
+      line-height: 10vw;
+  }
+  .content-box h3 {
+      font-size: 5vw;
+      line-height: 36px;
+  }
+}
