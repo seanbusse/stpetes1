@@ -29,6 +29,10 @@ a {
   color: #692b38;
 }
 
+a:focus {
+  outline: none !important;
+}
+
 /* Header Styling */
 
 .topHeader a {
@@ -90,6 +94,12 @@ a {
 .dropdown-item {
   border-bottom: 1px solid;
   width: 95%;
+}
+
+.dropdown-item.active {
+  border-radius: 5px !important;
+  background: #692b38;;
+  color: #ffffff !important;
 }
 
 .dropdown-item:last-child {
@@ -316,12 +326,12 @@ a {
 
 /************************ Local Churches Page *******************************/
 .churchMapHeaderArea {
-  padding: 50px 10% 0 10%;
+  padding: 50px 5% 0;
 }
 
 /* Map Styling */
 .churchMapContainer {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   padding-bottom: 70vh;
   height: 0;
@@ -392,9 +402,9 @@ input[type=submit]:hover {
 /**************************Calendar Page************************************/
 /* Calendar Styling */
 .churchCalendarContainer {
-  max-width: 80%;
+  max-width: 90%;
   margin: 50px auto 0;
-  padding-bottom: 70%;
+  padding-bottom: 75%;
   height: 0;
   position: relative;
 }

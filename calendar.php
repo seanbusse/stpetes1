@@ -29,7 +29,7 @@
        <div class="collapse navbar-collapse align-items-stretch" id="navbarSupportedContent">
          <ul class="navbar-nav ml-auto">
            <li class="nav-item">
-             <a class="nav-link" href="index.php">Home</a>
+             <a class="nav-link" href="/">Home</a>
            </li>
            <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,7 +39,7 @@
                <a class="dropdown-item" href="#">Sermons</a>
                <a class="dropdown-item" href="#">Prayer</a>
                <a class="dropdown-item" href="#">Lectionary</a>
-               <a class="dropdown-item active" href="/local-churches.php">Local Churches</a>
+               <a class="dropdown-item" href="local-churches">Local Churches</a>
              </div>
            </li>
            <li class="nav-item dropdown">
@@ -54,17 +54,17 @@
            <li class="nav-item">
              <a class="nav-link" href="#">Give</a>
            </li>
-           <li class="nav-item">
+           <li class="nav-item active">
              <a class="nav-link" href="calendar">Calendar</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="contact.php">Contact</a>
+             <a class="nav-link" href="contact">Contact</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="hello.php">Hello</a>
+             <a class="nav-link" href="hello">Hello</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link pastoralLetter disabled" href="#"><i class="fa fa-info-circle"></i></a>
+             <a class="nav-link pastoralLetter" data-toggle="modal" data-target="#pastoralLetter" href="#"><i class="fa fa-info-circle"></i></a>
            </li>
          </ul>
        </div>
@@ -86,10 +86,33 @@
   <p class="footerText">&copy; <?php echo date('Y'); ?> St. Peter's Anglican Church. Website created and managed by <a href="https://4uweb.design">4U WebDesign</a></p>
 </div>
 
+<!-- Modals Section -->
+<!-- Pastoral Letter Modal -->
+<div class="modal fade" id="pastoralLetter" tabindex="-1" aria-labelledby="localChurchesText" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scroll" style="width: auto !important; max-width: 1000px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">A Letter for the members of St. Peter's</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="pdfContainer" class="modal-body">
+        <embed src="/documents/2020-11-Stewardship-Letterhead.pdf" type="application/pdf" width="100%" height="900" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Pastoral Letter Modal -->
+<!-- End Modals Section -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/9831339778.js" crossorigin="anonymous"></script>
   <script src="js/index.js" type="text/javascript"></script>
-
+  <script src="https://github.com/pipwerks/PDFObject/blob/master/pdfobject.min.js"></script>
  </body>
 </html>
