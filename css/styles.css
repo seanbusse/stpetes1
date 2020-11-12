@@ -1,11 +1,5 @@
 /* General Styling */
 
-p {
-  font-size: 18px;
-  font-weight: 200;
-  font-family: Open Sans, sans-serif;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: #122348;
   font-family: open sans, sans-serif;
@@ -17,26 +11,32 @@ button:focus {
 }
 
 html {
-  background: rgba(128,123,134,0.3);
+  background: rgba(128, 123, 134, 0.3);
 }
 
 body {
   width: 100%;
   margin: auto;
   background-color: #949aa9;
-  box-shadow: 0 0 7px rgba(0,0,0,0.2);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   max-width: 1440px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Open Sans, sans-serif;
 }
 
-.main {
-  padding-bottom: 50px;
+a {
+  color: #692b38;
 }
-
 
 /* Header Styling */
 
+.topHeader a {
+  font-family: open sans, sans-serif;
+}
+
 #header {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop( 0.0, rgb(221, 220, 220) ), color-stop( 1.0, rgba(147, 154, 169, 0.67) ));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, rgb(221, 220, 220)), color-stop(1.0, rgba(147, 154, 169, 0.67)));
 }
 
 .btn-square {
@@ -58,10 +58,12 @@ body {
   font-size: 18px;
   font-weight: 200;
   color: #122348;
+  padding: .25rem 1.5rem;
+  margin: 3px auto;
 }
 
 .nav-item.active a {
-  color: #451c25;
+  color: #692b38;
 }
 
 .navbar-toggler-icon i {
@@ -70,13 +72,14 @@ body {
 }
 
 .navbar-toggler-icon i:focus {
-  color: #451c25;
+  color: #692b38;;
 }
 
 .dropdown-menu {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 0px;
+  top: 92px;
   width: 300px;
   text-align: left;
   right: 0;
@@ -87,9 +90,6 @@ body {
 .dropdown-item {
   border-bottom: 1px solid;
   width: 95%;
-  margin: auto;
-  padding: .25rem 1.5rem;
-  margin: 3px;
 }
 
 .dropdown-item:last-child {
@@ -98,7 +98,7 @@ body {
 
 .dropdown-item:hover {
   border-radius: 5px !important;
-  background: #451c25;
+  background: #692b38;;
   color: #ffffff !important;
 }
 
@@ -107,20 +107,37 @@ body {
     background-color: transparent;
     width: 100%;
   }
+
   .nav-link {
     border-bottom: 1px solid;
-    }
+    padding: 0;
+  }
+
   .dropdown-item:last-child {
     border-bottom: 1px solid;
   }
 }
-/* Home Styling */
 
+/* Footer Styling */
+
+.footer {
+  padding: 20px 0 10px 0;
+  margin-top: 50px;
+  background: #dddddd;
+  color: #692b38;
+  text-align: center;
+}
+
+.footer a {
+  color: inherit;
+}
+
+/************************* Home Page *****************************************/
 .homeTop {
-  background-image: url('https://stpetesok.church/images/2018/08/16/galaxy-background-tumblr.jpg');
+  background-image: url('https://stpo.ca/dev/images/home/galaxy-background-tumblr.jpg');
   background-position: center center;
   background-repeat: none;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -190,37 +207,37 @@ body {
 }
 
 .content-box h3 {
-    text-align: left;
-    background: #333333;
-    color: #ffffff !important;
-    font-size: 2.5vw;
-    line-height: 40px;
-    margin-bottom: 0;
-    margin-top: 0;
-    border-radius: 0 0 5px 5px;
-    padding: 5px;
-    font-family: book antiqua, serif;
+  text-align: left;
+  background: #333333;
+  color: #ffffff !important;
+  font-size: 2.5vw;
+  line-height: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+  font-family: book antiqua, serif;
 }
 
 .content-box img {
-    border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .content-box-flip h3 {
-    text-align: left;
-    background: #333333;
-    color: #ffffff !important;
-    font-size: 2.5vw;
-    line-height: 40px;
-    margin-bottom: 0;
-    margin-top: 0;
-    border-radius: 5px 5px 0 0;
-    padding: 5px;
-    font-family: book antiqua, serif;
+  text-align: left;
+  background: #333333;
+  color: #ffffff !important;
+  font-size: 2.5vw;
+  line-height: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  font-family: book antiqua, serif;
 }
 
 .content-box-flip img {
-    border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .linkBoxSection {
@@ -244,13 +261,20 @@ body {
 
 .givingHeader {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.giveSection {
+  padding: 50px 5%;
 }
 
 .giveImageContainer {
   padding: 0 3%;
+  margin: 0 0 30px 0;
 }
 
 .giveImage {
+  width: 100%;
   max-width: 100%;
   background: #ffffff;
   box-shadow: 5px 5px 20px 0px #404040;
@@ -258,30 +282,129 @@ body {
 
 @media (min-width: 1500px) {
   .missionMinute h3 {
-      font-size: 36px;
-      line-height: 50px;
+    font-size: 36px;
+    line-height: 50px;
   }
+
   .content-box h3 {
-      font-size: 36px;
-      line-height: 40px;
-    }
+    font-size: 36px;
+    line-height: 40px;
+  }
+
   .content-box-flip h3 {
-      font-size: 36px;
-      line-height: 40px;
-    }
+    font-size: 36px;
+    line-height: 40px;
+  }
 }
 
 @media(max-width: 992px) {
   .missionMinute h3 {
-      font-size: 5vw;
-      line-height: 10vw;
+    font-size: 5vw;
+    line-height: 10vw;
   }
+
   .content-box h3 {
-      font-size: 5vw;
-      line-height: 10vw;
+    font-size: 5vw;
+    line-height: 10vw;
   }
+
   .content-box-flip h3 {
-      font-size: 5vw;
-      line-height: 10vw;
+    font-size: 5vw;
+    line-height: 10vw;
   }
+}
+
+/************************ Local Churches Page *******************************/
+.churchMapHeaderArea {
+  padding: 50px 10% 0 10%;
+}
+
+/* Map Styling */
+.churchMapContainer {
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 70vh;
+  height: 0;
+  position: relative;
+}
+
+.churchMap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/************************ Contact Page **************************************/
+/* Map Styling */
+.mapArea {
+  padding: 50px 0;
+}
+
+.mapContainer {
+  position: relative;
+  padding-top: 40%;
+  height: 0;
+}
+
+.contactMap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact Form Styling */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: transparent !important;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* End Contact Page */
+
+/**************************Calendar Page************************************/
+/* Calendar Styling */
+.churchCalendarContainer {
+  max-width: 80%;
+  margin: 50px auto 0;
+  padding-bottom: 70%;
+  height: 0;
+  position: relative;
+}
+
+.churchCalendar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

@@ -1,0 +1,40 @@
+[06-Nov-2020 23:08:15 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/index.php:200
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/index.php on line 200
+[06-Nov-2020 23:09:14 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/index.php:200
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/index.php on line 200
+[06-Nov-2020 23:10:00 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/index.php:200
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/index.php on line 200
+[06-Nov-2020 23:10:57 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/index.php:200
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/index.php on line 200
+[06-Nov-2020 23:11:04 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/contact.php:138
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/contact.php on line 138
+[06-Nov-2020 23:11:55 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/contact.php:138
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/contact.php on line 138
+[06-Nov-2020 23:12:30 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/contact.php:138
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/contact.php on line 138
+[06-Nov-2020 23:12:37 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/contact.php:138
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/contact.php on line 138
+[06-Nov-2020 23:12:57 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/contact.php:138
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/contact.php on line 138
+[06-Nov-2020 23:18:50 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/stpo010093/public_html/stpetesok.church/dev/index.php:198
+Stack trace:
+#0 {main}
+  thrown in /home/stpo010093/public_html/stpetesok.church/dev/index.php on line 198
