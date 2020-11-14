@@ -18,6 +18,16 @@
        <a class="col-md-6 btn btn-danger btn-square btn-customFont" href="https://live.stpetesok.church" target="_blank">Watch our Livestream</a>
        <a class="col-md-6 btn btn-warning btn-square btn-customFont" href="https://vimeo.com/stpetesok" target="_blank">Watch our past messages</a>
      </div>
+     <div class="contactRow row">
+       <div class="col-md-6 social">
+         <div class="fb-like" data-href="https://www.facebook.com/stpeterok/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false">&nbsp;</div>
+           <a class="twitter-follow-button" href="https://twitter.com/saintpetesok?ref_src=twsrc%5Etfw" data-show-count="false">Follow @saintpetesok</a>
+         </div>
+         <div class="contact col-md-6">
+           <a class="phone" href="#"><i class="contactPhone fa fa-phone"></i>&nbsp;403-938-4261</a>
+           <i class="contactEmail fas fa-envelope"></i><a class="emailAddress">send email</a>
+         </div>
+     </div>
    </div>
    <div id="header">
      <nav class="navbar navbar-expand-lg navbar-custom">
@@ -117,5 +127,14 @@
   <script src="js/index.js" type="text/javascript"></script>
   <script src="https://github.com/pipwerks/PDFObject/blob/master/pdfobject.min.js"></script>
   <script src="https://stp.elvanto.eu/calendar_embed.js?c[]=16405766-4879-416e-8fc0-e91f0053096d&c[]=08de072a-fa63-11e2-9ed5-188c76acf9db&c[]=60d06abe-0d9a-46df-b442-bac06d918507&ca[]=services&fd=s&el_id=4147"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=326088981289376&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
  </body>
 </html>
