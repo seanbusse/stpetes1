@@ -47,7 +47,7 @@
                Information
              </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="#">About Us</a>
+               <a class="dropdown-item" href="about-us">About Us</a>
                <a class="dropdown-item" href="#">Privacy</a>
              </div>
            </li>
@@ -77,8 +77,10 @@
 <!-- Calendar Area -->
 <div class="churchCalendarArea">
   <div class="churchCalendarContainer">
-    <iframe class="churchCalendar" allowtransparency="true" src="https://stp.elvanto.eu/calendar_embed/?c[]=16405766-4879-416e-8fc0-e91f0053096d&c[]=08de072a-fa63-11e2-9ed5-188c76acf9db&c[]=60d06abe-0d9a-46df-b442-bac06d918507&ca[]=services&fd=s" frameborder="0" style="width:100%; height:100%; border:none;"></iframe>
+    <div id="elvanto-calendar-4147"></div>
   </div>
+</div>
+
 
 
 <!-- Footer Section -->
@@ -114,5 +116,6 @@
   <script src="https://kit.fontawesome.com/9831339778.js" crossorigin="anonymous"></script>
   <script src="js/index.js" type="text/javascript"></script>
   <script src="https://github.com/pipwerks/PDFObject/blob/master/pdfobject.min.js"></script>
+  <script src="https://stp.elvanto.eu/calendar_embed.js?c[]=16405766-4879-416e-8fc0-e91f0053096d&c[]=08de072a-fa63-11e2-9ed5-188c76acf9db&c[]=60d06abe-0d9a-46df-b442-bac06d918507&ca[]=services&fd=s&el_id=4147"></script>
  </body>
 </html>

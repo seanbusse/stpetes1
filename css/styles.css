@@ -83,13 +83,16 @@ a:focus {
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 0px;
-  top: 92px;
+  top: 35px;
   width: 300px;
   text-align: left;
   right: 0;
   left: initial;
   margin-right: auto !important;
 }
+/* .home .dropdown-menu {
+  top: 92px;
+} */
 
 .dropdown-item {
   border-bottom: 1px solid;
@@ -128,6 +131,17 @@ a:focus {
   }
 }
 
+@media (max-width: 375px) {
+  .logo {
+    max-width: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .logo {
+    max-width: 200px;
+  }
+}
+
 /* Footer Styling */
 
 .footer {
@@ -152,7 +166,8 @@ a:focus {
 }
 
 #homeCarousel {
-  padding: 150px 20%;
+  padding: 150px 13%;
+  height: 400px;
 }
 
 #homeCarousel h2 {
@@ -251,22 +266,23 @@ a:focus {
 }
 
 .linkBoxSection {
-  padding: 0 5% 50px 5%;
-  position: relative;
-  top: -125px;
-  margin-bottom: -150px;
+  padding: 0 5%;
+}
+
+.middle1 {
+  margin-top: -50px;
 }
 
 .middle2 {
-  margin-top: 50px;
+  margin-top: -50px;
 }
 
 .middle3 {
-  margin-top: 100px;
+  margin-top: -50px;
 }
 
 .middle4 {
-  margin-top: 150px;
+  margin-top: -50px;
 }
 
 .givingHeader {
@@ -275,7 +291,7 @@ a:focus {
 }
 
 .giveSection {
-  padding: 50px 5%;
+  padding: 50px 5% 0;
 }
 
 .giveImageContainer {
@@ -307,7 +323,26 @@ a:focus {
   }
 }
 
+@media (max-width: 1112px) {
+  #homeCarousel {
+    padding-top: 100px;
+  }
+}
+
 @media(max-width: 992px) {
+  #homeCarousel {
+    padding-top: 150px;
+    height: 400px;
+  }
+  .middle3, .middle4 {
+    margin-top: 30px;
+  }
+  .homeTop {
+    background-attachment: scroll;
+  }
+  .topLinks {
+    padding: 100px 5%;
+  }
   .missionMinute h3 {
     font-size: 5vw;
     line-height: 10vw;
@@ -315,14 +350,35 @@ a:focus {
 
   .content-box h3 {
     font-size: 5vw;
-    line-height: 10vw;
+    line-height: 8vw;
   }
 
   .content-box-flip h3 {
     font-size: 5vw;
-    line-height: 10vw;
+    line-height: 8vw;
+  }
+  .linkBoxSection {
+    padding: 0 15px;
   }
 }
+
+@media (max-width: 768px) {
+  #homeCarousel {
+    padding-top: 100px;
+    height: 500px;
+  }
+  .topLinks {
+    padding: 100px 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  #homeCarousel {
+    padding-top: 50px;
+    height: 550px;
+  }
+}
+/************************* End Home Page *************************************/
 
 /************************ Local Churches Page *******************************/
 .churchMapHeaderArea {
@@ -347,6 +403,7 @@ a:focus {
   bottom: 0;
   left: 0;
 }
+/************************End Local Churches Page *****************************/
 
 /************************ Contact Page **************************************/
 /* Map Styling */
@@ -397,24 +454,41 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-/* End Contact Page */
+/************************* End Contact Page *********************************/
 
 /**************************Calendar Page************************************/
 /* Calendar Styling */
 .churchCalendarContainer {
   max-width: 90%;
   margin: 50px auto 0;
-  padding-bottom: 75%;
-  height: 0;
-  position: relative;
 }
 
-.churchCalendar {
+@media (max-width: 992px) {
+  .churchCalendarArea {
+    padding-bottom: 0;
+  }
+}
+/************************* End Calendar Page*********************************/
+
+/************************* About Us *****************************************/
+/* Info Section Styling */
+.aboutUs {
+  padding: 50px 10% 0;
+}
+.aboutUsSection {
+  padding-bottom: 50px;
+}
+.forALaugh {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
+  top:0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.forALaughContainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
 }

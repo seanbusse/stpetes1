@@ -47,7 +47,7 @@
                Information
              </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="#">About Us</a>
+               <a class="dropdown-item" href="about-us">About Us</a>
                <a class="dropdown-item" href="#">Privacy</a>
              </div>
            </li>
