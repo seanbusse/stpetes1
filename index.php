@@ -9,7 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
-  <title>St. Peter's Anglican Church</title>
+  <title>St. Peters Anglican Church</title>
+  <meta name="description" content="St. Peter's Anglican Church Okotoks. A liturgical Anglican church. We are an Okotoks Church who looks forward to caring for you or your family">
 </head>
 
 <body class="home">
@@ -20,11 +21,11 @@
       <a class="col-md-6 btn btn-warning btn-square btn-customFont" href="https://vimeo.com/stpetesok" target="_blank">Watch our past messages</a>
     </div>
     <div class="contactRow row">
-      <div class="col-md-6 social">
+      <div class="col-md-6 social mobile-centered">
         <div class="fb-like" data-href="https://www.facebook.com/stpeterok/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false">&nbsp;</div>
           <a class="twitter-follow-button" href="https://twitter.com/saintpetesok?ref_src=twsrc%5Etfw" data-show-count="false">Follow @saintpetesok</a>
         </div>
-        <div class="contact col-md-6">
+        <div class="contact col-md-6 mobile-centered">
           <a class="phone" href="#"><i class="contactPhone fa fa-phone"></i>&nbsp;403-938-4261</a>
           <i class="contactEmail fas fa-envelope"></i><a class="emailAddress">send email</a>
         </div>
@@ -66,7 +67,8 @@
             <a class="nav-link" href="#">Give</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="calendar">Calendar</a>
+            <a class="mobileCalendar nav-link" href="mobile-calendar">Calendar</a>
+            <a class="desktopCalendar nav-link" href="desktop-calendar">Calendar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact">Contact</a>

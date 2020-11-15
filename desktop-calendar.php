@@ -41,7 +41,7 @@
            <li class="nav-item">
              <a class="nav-link" href="/">Home</a>
            </li>
-           <li class="nav-item active dropdown">
+           <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                Resources
              </a>
@@ -49,7 +49,7 @@
                <a class="dropdown-item" href="#">Sermons</a>
                <a class="dropdown-item" href="#">Prayer</a>
                <a class="dropdown-item" href="#">Lectionary</a>
-               <a class="dropdown-item active" href="local-churches">Local Churches</a>
+               <a class="dropdown-item" href="local-churches">Local Churches</a>
              </div>
            </li>
            <li class="nav-item dropdown">
@@ -64,7 +64,7 @@
            <li class="nav-item">
              <a class="nav-link" href="#">Give</a>
            </li>
-           <li class="nav-item">
+           <li class="nav-item active">
              <a class="mobileCalendar nav-link" href="mobile-calendar">Calendar</a>
              <a class="desktopCalendar nav-link" href="desktop-calendar">Calendar</a>
            </li>
@@ -85,21 +85,20 @@
 
 
 
-<!-- Map Area -->
-<div class="churchMapHeaderArea">
-  <h3>Find a local church in Okotoks</h3>
-  <p>Click on one of the map markers for more information.</p>
-</div>
-<div class="churchMapContainer">
-    <iframe class="churchMap" src="https://www.google.com/maps/d/embed?mid=1EHx1nl13uXnnuv-ygJM3FNcAxCRSoPtZ" ></iframe>
+<!-- Calendar Area -->
+<div class="churchCalendarArea">
+  <div class="churchCalendarContainer">
+    <div id="elvanto-calendar-4147"></div>
+    </div>
 </div>
 
-<!-- Address Area -->
+
 
 <!-- Footer Section -->
 <div class="footer">
   <p class="footerText">&copy; <?php echo date('Y'); ?> St. Peter's Anglican Church. Website created and managed by <a href="https://4uweb.design">4U WebDesign</a></p>
 </div>
+
 <!-- Modals Section -->
 <!-- Pastoral Letter Modal -->
 <div class="modal fade" id="pastoralLetter" tabindex="-1" aria-labelledby="localChurchesText" aria-hidden="true">
@@ -123,11 +122,12 @@
 <!-- End Pastoral Letter Modal -->
 <!-- End Modals Section -->
 
-
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/9831339778.js" crossorigin="anonymous"></script>
   <script src="js/index.js" type="text/javascript"></script>
+  <script src="https://github.com/pipwerks/PDFObject/blob/master/pdfobject.min.js"></script>
+  <script src="https://stp.elvanto.eu/calendar_embed.js?c[]=16405766-4879-416e-8fc0-e91f0053096d&c[]=08de072a-fa63-11e2-9ed5-188c76acf9db&c[]=60d06abe-0d9a-46df-b442-bac06d918507&ca[]=services&fd=s&el_id=4147"></script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -139,3 +139,9 @@
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
  </body>
 </html>
+
+
+
+<div class="mobileCalendar churchCalendarContainer">
+<div id="elvanto-events-3178"></div>
+</div>

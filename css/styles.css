@@ -164,6 +164,12 @@ a:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .mobile-centered {
+    text-align: center;
+  }
+}
+
 @media (max-width: 375px) {
   .logo {
     max-width: 250px;
@@ -403,6 +409,9 @@ a:focus {
   .topLinks {
     padding: 100px 15px;
   }
+  .middle2 {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -496,9 +505,22 @@ input[type=submit]:hover {
   margin: 50px auto 0;
 }
 
+.mobileCalendar {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .churchCalendarArea {
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileCalendar {
+    display: block;
+  }
+  .desktopCalendar {
+    display: none;
   }
 }
 /************************* End Calendar Page*********************************/
