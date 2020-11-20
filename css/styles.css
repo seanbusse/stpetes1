@@ -33,21 +33,9 @@ a:focus {
   outline: none !important;
 }
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 .modal-dialog {
   width: auto !important;
   max-width: 1000px
-}
-
-.modal-dialog-scroll {
-  -webkit-overflow-scrolling: touch;
 }
 
 /* Header Styling */
@@ -83,6 +71,18 @@ a:focus {
 
 .fb-like span {
   height: 26px !important;
+}
+
+.windowWidthChange {
+  background-color: rgba(255,255,255,0.8);
+  position: fixed;
+  top:0;
+  right: 0;
+  width: auto;
+}
+
+.widthDisplay {
+  color: #333333;
 }
 
 #header {
@@ -165,6 +165,14 @@ a:focus {
   color: #ffffff !important;
 }
 
+.mobileCalendar {
+  display: none;
+}
+
+.pastoralLetterMobile {
+  display: none;
+}
+
 @media (max-width: 992px) {
   .dropdown-menu {
     background-color: transparent;
@@ -179,11 +187,25 @@ a:focus {
   .dropdown-item:last-child {
     border-bottom: 1px solid;
   }
+
+  .pastoralLetterMobile {
+    display: block;
+  }
+
+  .pastoralLetter {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .mobile-centered {
     text-align: center;
+  }
+  .mobileCalendar {
+    display: block;
+  }
+  .desktopCalendar {
+    display: none;
   }
 }
 
@@ -486,6 +508,15 @@ a:focus {
   height: 100%;
 }
 
+.contact a {
+  text-decoration: none;
+  color: #451c25;
+}
+
+.contact .phone {
+  cursor: default;
+}
+
 /* Contact Form Styling */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -522,22 +553,9 @@ input[type=submit]:hover {
   margin: 50px auto 0;
 }
 
-.mobileCalendar {
-  display: none;
-}
-
 @media (max-width: 992px) {
   .churchCalendarArea {
     padding-bottom: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .mobileCalendar {
-    display: block;
-  }
-  .desktopCalendar {
-    display: none;
   }
 }
 /************************* End Calendar Page*********************************/
@@ -620,3 +638,56 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
   height: 56.25%;
 } */
+/****************************End Sermons Page ******************************/
+
+/*******************************Begin Error Page*****************************/
+body.errorPage {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+}
+
+#errorSection {
+  background-image: url('/images/error-background-image.JPG');
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.errorSectionOverlay {
+  background-color: rgba(255,255,255,0.3);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.errorMessage {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  height: 60vh;
+}
+
+.errorMessage p {
+  font-size: 15vh;
+  color: #122348;
+  font-weight: 200;
+  line-height: 15vh;
+}
+
+.errorMessage i {
+  font-size: 10vh;
+  color: #122348;
+  line-height: 10vh;
+}
+
+.errorMessage h1 {
+  font-size: 5vh;
+  line-height: 5vh;
+}
