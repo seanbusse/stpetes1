@@ -32,13 +32,7 @@ function setMenuBehavior() {
     $('.dropdown').mouseout(function() {
       $(this).children('.dropdown-menu').hide();
     });
-    $('.dropdown-menu').mouseover(function() {
-      $('.dropdown-manu').show();
-    });
-    $('.dropdown-menu').mouseout(function() {
-      $('.dropdown-manu').hide();
-    });
-  } else if(windowSize <= 991) {
+  } else {
     $('.dropdown').off('mouseover');
     $('.dropdown').off('mouseout');
   }
