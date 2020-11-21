@@ -40,20 +40,18 @@
 
       <div class="collapse navbar-collapse align-items-stretch" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="index" id="homeNavbarDropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li class="nav-item dropdown active homeList"><span class="mobileClose"><i class="fas fa-minus"></i></span>
+            <a class="nav-link dropdown-toggle homeLink" href="" id="homeNavbarDropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+            <div class="dropdown-menu homeDropdown hasParentLink" aria-labelledby="homeNavbarDropdown">
               <a class="dropdown-item" href="sermons">Sermons</a>
               <a class="dropdown-item" href="#">Prayer</a>
               <a class="dropdown-item" href="#">Lectionary</a>
               <a class="dropdown-item" href="local-churches">Local Churches</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="infoNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Information
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li class="nav-item dropdown"><span class="mobileClose"><i class="fas fa-minus"></i></span>
+            <a class="nav-link dropdown-toggle" href="#" id="infoNavbarDropdown" aria-haspopup="true" aria-expanded="false">Information</a>
+            <div class="dropdown-menu" aria-labelledby="infoNavbarDropdown">
               <a class="dropdown-item" href="about-us">About Us</a>
               <a class="dropdown-item" href="#">Privacy</a>
             </div>
