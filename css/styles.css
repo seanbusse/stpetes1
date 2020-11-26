@@ -173,33 +173,33 @@ a:focus {
   display: none;
 }
 
-.mobileClose {
-  display: none;
+.mobileIndicator {
   float: right;
   padding: .25rem 1.5rem;
-  margin-bottom: 3px auto;
+  margin: 6px auto -6px;
   cursor: pointer;
 }
 
-.mobileOpen{
-  float: right;
-  padding: .25rem 1.5rem;
-  margin-bottom: 3px auto;
-  cursor: pointer;
+.mobileIndicator i {
+  font-size: 18px;
+}
+
+.mobileClose {
+  display: none;
+}
+
+.mobileOpen {
+  display: inline;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 
 @media (max-width: 992px) {
   .dropdown-menu {
     background-color: transparent;
     width: 100%;
-  }
-
-  .mobileHome {
-    display: block;
-  }
-
-  .desktopHome, .mobileHomeLink {
-    display: none;
   }
 
   .nav-link {
@@ -371,19 +371,19 @@ a:focus {
 }
 
 .middle1 {
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .middle2 {
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .middle3 {
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .middle4 {
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .givingHeader {
@@ -443,6 +443,7 @@ a:focus {
   }
   .topLinks {
     padding: 100px 5%;
+    margin-bottom: -300px;
   }
   .missionMinute h3 {
     font-size: 5vw;
@@ -460,6 +461,7 @@ a:focus {
   }
   .linkBoxSection {
     padding: 0 15px;
+    margin-top: 300px;
   }
 }
 
