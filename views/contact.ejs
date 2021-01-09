@@ -1,0 +1,45 @@
+<%- include('partials/header') -%>
+
+  <!-- Map Area -->
+  <div class="mapArea container">
+    <h4 class="mapAreaHeader">Where To Find Us</h4>
+    <div class="mapContainer">
+      <iframe class="contactMap"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.7998127065844!2d-113.9854687837166!3d50.723652975521446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537198315b0ed4c1%3A0x5fae5f86cd6e807a!2sSt.%20Peter&#39;s%20Anglican%20Church!5e0!3m2!1sen!2sca!4v1604684774945!5m2!1sen!2sca"
+        allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contactSection container">
+    <div class="row">
+      <div class="col-lg-6 contactInfo">
+        <h3 class="contactHeader">Contact Information</h3>
+        <p><strong>Phone:</strong> 403-938-4261<br /><strong>Fax:</strong> 403-938-5685<br /><strong>Email:</strong><span class="emailAddress">send email</span><br /><strong>Facebook:</strong> <a
+            href="https://facebook.com/stpeterok">https://facebook.com/stpeterok</a><br /><strong>Twitter:</strong> <a href="https://twitter.com/saintpetesok">https://twitter.com/saintpetesok</a></p>
+      </div>
+      <div class="col-lg-6 contactForm">
+        <h4 class="contactFormHeader">Send Us A Message</h4>
+        <div class="formContainer">
+          <form id="contactForm" action="/contact">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name...">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..." <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Compose your message..." style="height:200px"></textarea>
+
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+            <div class="g-recaptcha" data-sitekey="6LcXEzkUAAAAAKLxlNCmsQpl3awsbOU_j1GEqz2L"></div>
+            <br />
+            <input type="submit" value="Submit">
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%- include('partials/footer') -%>
