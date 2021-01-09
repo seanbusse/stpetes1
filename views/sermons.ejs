@@ -1,79 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css" type="text/css" />
-  <title>St. Peter's Anglican Church</title>
-</head>
-
-<body>
-  <!-- Header -->
-  <div id="topHeader" class="container-fluid">
-    <div class="row">
-      <a class="col-md-6 btn btn-danger btn-square btn-customFont" href="https://live.stpetesok.church" target="_blank">Watch our Livestream</a>
-      <a class="col-md-6 btn btn-warning btn-square btn-customFont" href="https://vimeo.com/stpetesok" target="_blank">Watch our past messages</a>
-    </div>
-    <div class="contactRow row">
-      <div class="col-md-6 social mobile-centered">
-        <div class="fb-like" data-href="https://www.facebook.com/stpeterok/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false">&nbsp;</div>
-        <a class="twitter-follow-button" href="https://twitter.com/saintpetesok?ref_src=twsrc%5Etfw" data-show-count="false">Follow @saintpetesok</a>
-      </div>
-      <div class="contact col-md-6 mobile-centered">
-        <a class="phone" href="#"><i class="contactPhone fa fa-phone"></i>&nbsp;403-938-4261</a>
-        <i class="contactEmail fas fa-envelope"></i><a class="emailAddress">send email</a>
-      </div>
-    </div>
-  </div>
-  <div id="header">
-    <nav class="navbar navbar-expand-lg navbar-custom">
-      <a class="navbar-brand" href="/"><img class="logo" src="images/stporetinalogo1.png" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
-      </button>
-
-      <div class="collapse navbar-collapse align-items-stretch" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown active"><span class="mobileIndicator"><span class="mobileOpen"><i class="fas fa-plus"></i></span><span class="mobileClose"><i class="fas fa-minus"></i></span></span>
-            <a class="nav-link dropdown-toggle hasLink" value="/" href="" id="homeNavbarDropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-            <div class="dropdown-menu" aria-labelledby="homeNavbarDropdown">
-              <a class="dropdown-item active" href="sermons">Sermons</a>
-              <a class="dropdown-item" href="#">Prayer</a>
-              <a class="dropdown-item" href="#">Lectionary</a>
-              <a class="dropdown-item" href="local-churches">Local Churches</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown"><span class="mobileIndicator"><span class="mobileOpen"><i class="fas fa-plus"></i></span><span class="mobileClose"><i class="fas fa-minus"></i></span></span>
-            <a class="nav-link dropdown-toggle noLink" value="#" href="#" id="infoNavbarDropdown" aria-haspopup="true" aria-expanded="false">Information</a>
-            <div class="dropdown-menu" aria-labelledby="infoNavbarDropdown">
-              <a class="dropdown-item" href="about-us">About Us</a>
-              <a class="dropdown-item" href="#">Privacy</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Give</a>
-          </li>
-          <li class="nav-item">
-            <a class="mobileCalendar nav-link" href="mobile-calendar">Calendar</a>
-            <a class="desktopCalendar nav-link" href="desktop-calendar">Calendar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pastoralLetter" data-toggle="modal" data-target="#pastoralLetter" href="#"><i class="fa fa-info-circle"></i></a>
-            <a class="nav-link pastoralLetterMobile" href="documents/2020-11-Stewardship-Letterhead.pdf" target="_blank"><i class="fa fa-info-circle"></i></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <!-- End Header -->
+<%- include('partials/header') -%>
 
   <!-- Begin the Sermon Cards -->
   <div class="sermons">
@@ -93,14 +18,14 @@
             <small class="text-muted"><strong>Coming: </strong>November 22, 2020</small>
           </div>
         </div>
-        <div class="modal fade sermonModalPopup" id="prayerHowWhatWhy" tabindex="-1" aria-labelledby="prayerHowWhatWhy" aria-hidden="true">
+        <div class="modal fade-in-in sermonModalPopup" id="prayerHowWhatWhy" tabindex="-1" aria-labelledby="prayerHowWhatWhy" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="" class="modal-body vimeoModalContainer">
                 <button type="button" class="close sermonClose" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <iframe class="vimeoEmbed" src="https://player.vimeo.com/video/481359922" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
+                <iframe id="sermonPlayer" class="vimeoEmbed" src="https://player.vimeo.com/video/481359922" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
               </div>
             </div>
           </div>
@@ -121,14 +46,14 @@
             <small class="text-muted"><strong>Message Date: </strong>November 15, 2020</small>
           </div>
         </div>
-        <div class="modal fade sermonModalPopup" id="exploreNewRoads" tabindex="-1" aria-labelledby="exploreNewRoads" aria-hidden="true">
+        <div class="modal fade-in-in sermonModalPopup" id="exploreNewRoads" tabindex="-1" aria-labelledby="exploreNewRoads" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="" class="modal-body vimeoModalContainer">
                 <button type="button" class="close sermonClose" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <iframe class="vimeoEmbed" src="https://player.vimeo.com/video/479291285" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
+                <iframe id="sermonPlayer" class="vimeoEmbed" src="https://player.vimeo.com/video/479291285" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
               </div>
             </div>
           </div>
@@ -149,14 +74,14 @@
             <small class="text-muted"><strong>Message Date: </strong>November 8, 2020</small>
           </div>
         </div>
-        <div class="modal fade sermonModalPopup" id="storiesImTold" tabindex="-1" aria-labelledby="storiesImTold" aria-hidden="true">
+        <div class="modal fade-in-in sermonModalPopup" id="storiesImTold" tabindex="-1" aria-labelledby="storiesImTold" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="" class="modal-body vimeoModalContainer">
                 <button type="button" class="close sermonClose" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <iframe class="vimeoEmbed" src="https://player.vimeo.com/video/476530454" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
+                <iframe id="sermonPlayer" class="vimeoEmbed" src="https://player.vimeo.com/video/476530454" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
               </div>
             </div>
           </div>
@@ -177,14 +102,14 @@
             <small class="text-muted"><strong>Message Date: </strong>November 1, 2020</small>
           </div>
         </div>
-        <div class="modal fade sermonModalPopup" id="allSaints" tabindex="-1" aria-labelledby="allSaints" aria-hidden="true">
+        <div class="modal fade-in sermonModalPopup" id="allSaints" tabindex="-1" aria-labelledby="allSaints" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="" class="modal-body vimeoModalContainer">
                 <button type="button" class="close sermonClose" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <iframe class="vimeoEmbed" src="https://player.vimeo.com/video/474213685" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
+                <iframe id="sermonPlayer" class="vimeoEmbed" src="https://player.vimeo.com/video/474213685" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
               </div>
             </div>
           </div>
@@ -205,14 +130,14 @@
           <small class="text-muted"><strong>Message Date: </strong>October 25, 2020</small>
         </div>
       </div>
-      <div class="modal fade sermonModalPopup" id="aPlaceToLove" tabindex="-1" aria-labelledby="aPlaceToLove" aria-hidden="true">
+      <div class="modal fade-in sermonModalPopup" id="aPlaceToLove" tabindex="-1" aria-labelledby="aPlaceToLove" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div id="" class="modal-body vimeoModalContainer">
               <button type="button" class="close sermonClose" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              <iframe class="vimeoEmbed" src="https://player.vimeo.com/video/471833960" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
+              <iframe id="sermonPlayer" class="vimeoEmbed" src="https://player.vimeo.com/video/471833960" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
             </div>
           </div>
         </div>
@@ -233,14 +158,14 @@
         <small class="text-muted"><strong>Message Date: </strong>October 18, 2020</small>
       </div>
     </div>
-    <div class="modal fade sermonModalPopup" id="mayWeBeholdHisGlory" tabindex="-1" aria-labelledby="mayWeBeholdHisGlory" aria-hidden="true">
+    <div class="modal fade-in sermonModalPopup" id="mayWeBeholdHisGlory" tabindex="-1" aria-labelledby="mayWeBeholdHisGlory" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div id="" class="modal-body vimeoModalContainer">
             <button type="button" class="close sermonClose" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <iframe class="vimeoEmbed" src="https://player.vimeo.com/video/469306141" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
+            <iframe id="sermonPlayer" class="vimeoEmbed" src="https://player.vimeo.com/video/469306141" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay="1"></iframe>
           </div>
         </div>
       </div>
@@ -257,7 +182,7 @@
 
   <!-- Modals Section -->
   <!-- Pastoral Letter Modal -->
-  <div class="modal fade" id="pastoralLetter" tabindex="-1" aria-labelledby="pastoralLetter" aria-hidden="true">
+  <div class="modal fade-in" id="pastoralLetter" tabindex="-1" aria-labelledby="pastoralLetter" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scroll" style="width: auto !important; max-width: 1000px">
       <div class="modal-content">
         <div class="modal-header">

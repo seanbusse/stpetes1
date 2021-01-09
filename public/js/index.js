@@ -71,3 +71,7 @@ $(document).ready(function() {
 $(window).resize(function() {
   setMenuBehavior();
 });
+
+$('.sermonModalPopup').on('hide.bs.modal', function() {
+  location.reload();
+});
