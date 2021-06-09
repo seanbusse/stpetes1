@@ -53,17 +53,17 @@ a:focus {
   color: #122348;
 }
 
-.phone, .email {
-  padding: 0 10px;
+.phone{
+  padding-right: 10px;
 }
 
 .contact {
   text-align: right;
 }
 
-.contact i {
+/* .contact i {
   padding-right: 5px;
-}
+} */
 
 .contactRow {
   padding: 10px 0;
@@ -259,7 +259,7 @@ a:focus {
 
 /************************* Home Page *****************************************/
 .homeTop {
-  background-image: url('https://stpo.ca/dev/images/home/galaxy-background-tumblr.jpg');
+  background-image: url('images/galaxy-background-tumblr.jpg');
   background-position: center center;
   background-repeat: none;
   background-attachment: fixed;
@@ -495,7 +495,7 @@ a:focus {
 .churchMapContainer {
   max-width: 90%;
   margin: auto;
-  padding-bottom: 70vh;
+  padding-bottom: 70%;
   height: 0;
   position: relative;
 }
