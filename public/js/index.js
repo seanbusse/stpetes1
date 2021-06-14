@@ -75,3 +75,12 @@ $(window).resize(function() {
 $('.sermonModalPopup').on('hide.bs.modal', function() {
   location.reload();
 });
+
+//Set the dynamic year for footer
+const today = new Date();
+const object = {
+  year: 'numeric'
+};
+
+const year = today.toLocaleDateString('en-US', object);
+$('.year').text(year);
